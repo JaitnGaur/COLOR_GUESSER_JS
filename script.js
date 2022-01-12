@@ -1,5 +1,6 @@
 let squares = 3;
 let mode = 'easy';
+let topdisplay = document.querySelector("#head-color")
 let hard = document.getElementById('hard');
 let easy = document.getElementById('easy');
 let box = document.getElementsByClassName('box');
@@ -67,7 +68,7 @@ newclr.addEventListener('click', () => {
 
 function reset() {
     real_color = color_generator();
-    document.querySelector("#head-color").innerHTML = real_color;
+    topdisplay.innerHTML = real_color;
     head.style.background = '#4682B4';
     again.innerText = 'NEW COLORS';
 
